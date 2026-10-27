@@ -29,20 +29,40 @@
         private void InitializeComponent()
         {
             textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(115, 41);
+            textBox1.Location = new Point(56, 40);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(219, 27);
+            textBox1.Size = new Size(270, 27);
             textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(56, 93);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(270, 27);
+            textBox2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(56, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 20);
+            label1.TabIndex = 2;
+            label1.Text = "Hola";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(505, 450);
+            ClientSize = new Size(412, 151);
+            Controls.Add(label1);
+            Controls.Add(textBox2);
             Controls.Add(textBox1);
             Name = "Form1";
             Text = "Form1";
@@ -53,5 +73,7 @@
         #endregion
 
         private TextBox textBox1;
+        private TextBox textBox2;
+        private Label label1;
     }
 }
